@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define(["react", "react-dom"], factory);
 	else if(typeof exports === 'object')
-		exports["yxbaseui"] = factory(require("react"), require("react-dom"));
+		exports["baseui"] = factory(require("react"), require("react-dom"));
 	else
-		root["yxbaseui"] = factory(root["React"], root["ReactDOM"]);
+		root["baseui"] = factory(root["React"], root["ReactDOM"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE_4__, __WEBPACK_EXTERNAL_MODULE_26__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -99,11 +99,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	var Text = __webpack_require__(117);
 	var Textarea = __webpack_require__(316);
 	var VerticalLayout = __webpack_require__(14);
-	var YxQuestion = __webpack_require__(317);
+	var Questions = __webpack_require__(317);
 	var uibase = __webpack_require__(6);
 	var color = __webpack_require__(8);
 
-	module.exports = { BreadCrumb: BreadCrumb, Button: Button, Calendar: Calendar, Carousel: Carousel, CheckBox: CheckBox, CircleChoose: CircleChoose, CircleTab: CircleTab, Collapse: Collapse, CollapseList: CollapseList, ComboCalendar: ComboCalendar, DropDown: DropDown, ECharts: ECharts, Favicon: Favicon, Folder: Folder, FontIcon: FontIcon, GoTop: GoTop, HorizontalLayout: HorizontalLayout, Image: Image, Input: Input, Link: Link, LoginForm: LoginForm, ModifyNum: ModifyNum, NoBorderTabs: NoBorderTabs, NumberEdit: NumberEdit, PageTurning: PageTurning, PlateSwitch: PlateSwitch, Popover: Popover, ProblemShow: ProblemShow, ProblemShowKeGuanTi: ProblemShowKeGuanTi, ProblemShowZhuGuanTi: ProblemShowZhuGuanTi, ProblemZhuGuanTiShowGroup: ProblemZhuGuanTiShowGroup, PushInfo: PushInfo, Question: Question, Radio: Radio, RichEditor: RichEditor, SVGEditor: SVGEditor, Select: Select, Table: Table, TableTurning: TableTurning, Tabs: Tabs, Text: Text, Textarea: Textarea, VerticalLayout: VerticalLayout, YxQuestion: YxQuestion, uibase: uibase, color: color };
+	module.exports = { BreadCrumb: BreadCrumb, Button: Button, Calendar: Calendar, Carousel: Carousel, CheckBox: CheckBox, CircleChoose: CircleChoose, CircleTab: CircleTab, Collapse: Collapse, CollapseList: CollapseList, ComboCalendar: ComboCalendar, DropDown: DropDown, ECharts: ECharts, Favicon: Favicon, Folder: Folder, FontIcon: FontIcon, GoTop: GoTop, HorizontalLayout: HorizontalLayout, Image: Image, Input: Input, Link: Link, LoginForm: LoginForm, ModifyNum: ModifyNum, NoBorderTabs: NoBorderTabs, NumberEdit: NumberEdit, PageTurning: PageTurning, PlateSwitch: PlateSwitch, Popover: Popover, ProblemShow: ProblemShow, ProblemShowKeGuanTi: ProblemShowKeGuanTi, ProblemShowZhuGuanTi: ProblemShowZhuGuanTi, ProblemZhuGuanTiShowGroup: ProblemZhuGuanTiShowGroup, PushInfo: PushInfo, Question: Question, Radio: Radio, RichEditor: RichEditor, SVGEditor: SVGEditor, Select: Select, Table: Table, TableTurning: TableTurning, Tabs: Tabs, Text: Text, Textarea: Textarea, VerticalLayout: VerticalLayout, Questions: Questions, uibase: uibase, color: color };
 
 /***/ },
 /* 1 */
@@ -6506,13 +6506,13 @@ return /******/ (function(modules) { // webpackBootstrap
 		return Dialog;
 	}(_react2.default.Component);
 
-	var YXReactUIBase = function (_React$Component2) {
-		_inherits(YXReactUIBase, _React$Component2);
+	var ReactUIBase = function (_React$Component2) {
+		_inherits(ReactUIBase, _React$Component2);
 
-		function YXReactUIBase(props) {
-			_classCallCheck(this, YXReactUIBase);
+		function ReactUIBase(props) {
+			_classCallCheck(this, ReactUIBase);
 
-			var _this2 = _possibleConstructorReturn(this, Object.getPrototypeOf(YXReactUIBase).call(this, props));
+			var _this2 = _possibleConstructorReturn(this, Object.getPrototypeOf(ReactUIBase).call(this, props));
 
 			_this2.log = {
 				log: function log() {
@@ -6539,7 +6539,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			return _this2;
 		}
 
-		_createClass(YXReactUIBase, [{
+		_createClass(ReactUIBase, [{
 			key: 'selectkey',
 			value: function selectkey(props) {
 				var selectkey;
@@ -6839,10 +6839,10 @@ return /******/ (function(modules) { // webpackBootstrap
 			}
 		}]);
 
-		return YXReactUIBase;
+		return ReactUIBase;
 	}(_react2.default.Component);
 
-	module.exports = YXReactUIBase;
+	module.exports = ReactUIBase;
 
 /***/ },
 /* 7 */
@@ -55934,16 +55934,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 	}
 
-	var YxQuestion = function (_YXReactUIBase) {
-	    _inherits(YxQuestion, _YXReactUIBase);
+	var Questions = function (_YXReactUIBase) {
+	    _inherits(Questions, _YXReactUIBase);
 
-	    function YxQuestion() {
-	        _classCallCheck(this, YxQuestion);
+	    function Questions() {
+	        _classCallCheck(this, Questions);
 
-	        return _possibleConstructorReturn(this, Object.getPrototypeOf(YxQuestion).apply(this, arguments));
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(Questions).apply(this, arguments));
 	    }
 
-	    _createClass(YxQuestion, [{
+	    _createClass(Questions, [{
 	        key: 'createMarkup',
 	        //是否显示【学生答案】
 	        value: function createMarkup(value) {
@@ -56071,10 +56071,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 	    }]);
 
-	    return YxQuestion;
+	    return Questions;
 	}(_uibase2.default);
 
-	module.exports = YxQuestion;
+	module.exports = Questions;
 
 /***/ },
 /* 318 */

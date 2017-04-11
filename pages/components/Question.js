@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 import com from '../../pages/common/common'
 import VerticalLayout from '../../src/VerticalLayout'
 import Question from '../../src/Question'
 import Text from '../../src/Text'
-class QuestionInfo extends React.Component{
+class QuestionInfo extends Component {
     static get displayName (){
         return {
             name: '问题详情',

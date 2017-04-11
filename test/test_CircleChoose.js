@@ -1,7 +1,7 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 
-class Test_CircleChoose extends YXReactUIBase{	
+class Test_CircleChoose extends ReactUIBase{	
 
     render(){
         var HorizontalLayout=require("src/HorizontalLayout");

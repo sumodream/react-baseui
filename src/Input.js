@@ -1,8 +1,8 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 import HorizontalLayout from './HorizontalLayout'
 var color = require('../common/color');
-class Input extends YXReactUIBase{
+class Input extends ReactUIBase{
 	static get propTypes() {
 		return {
 			type: React.PropTypes.string,

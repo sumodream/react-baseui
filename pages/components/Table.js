@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 import com from '../../pages/common/common'
 import VerticalLayout from '../../src/VerticalLayout'
 import Table from '../../src/Table'
 import Text from '../../src/Text'
-class TableInfo extends React.Component{
+class TableInfo extends Component {
     static get displayName (){
         return {
             name: '表格',

@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 import com from '../../pages/common/common'
 import VerticalLayout from '../../src/VerticalLayout'
 import Popover from '../../src/Popover'
 import Text from '../../src/Text'
 import FontIcon from '../../src/FontIcon'
 import HorizontalLayout from '../../src/HorizontalLayout'
-class PopoverInfo extends React.Component{
+class PopoverInfo extends Component {
     static get displayName (){
         return {
             name: '气泡卡片',
@@ -68,7 +68,7 @@ class PopoverInfo extends React.Component{
                 text: <VerticalLayout>
                         <HorizontalLayout>
                         <com.Code type={'keyword'} text='import' ></com.Code>
-                        <com.Code text='YXReactUIBase'></com.Code>
+                        <com.Code text='ReactUIBase'></com.Code>
                         <com.Code type={'keyword'} text='from'></com.Code>
                         <com.Code type={'string'} text='"../framework/uibase"'></com.Code>
                         </HorizontalLayout>
@@ -82,7 +82,7 @@ class PopoverInfo extends React.Component{
                         <com.Code type={'function'} text='class' ></com.Code>
                         <com.Code text='Button'></com.Code>
                         <com.Code type={'function'} text='extends'></com.Code>
-                        <com.Code text='YXReactUIBase'></com.Code>
+                        <com.Code text='ReactUIBase'></com.Code>
                         <com.Code type={'punctuation'} text='{'></com.Code>
                         </HorizontalLayout>
                         </VerticalLayout>
@@ -92,7 +92,7 @@ class PopoverInfo extends React.Component{
                 text: <VerticalLayout>
                         <HorizontalLayout>
                         <com.Code type={'keyword'} text='import' ></com.Code>
-                        <com.Code text='Y45XReactUIBase'></com.Code>
+                        <com.Code text='ReactUIBase'></com.Code>
                         <com.Code type={'keyword'} text='from'></com.Code>
                         <com.Code type={'string'} text='"../framework/uibase"'></com.Code>
                         </HorizontalLayout>
@@ -106,7 +106,7 @@ class PopoverInfo extends React.Component{
                         <com.Code type={'function'} text='class' ></com.Code>
                         <com.Code text='Button'></com.Code>
                         <com.Code type={'function'} text='extends'></com.Code>
-                        <com.Code text='YXReactUIBase'></com.Code>
+                        <com.Code text='ReactUIBase'></com.Code>
                         <com.Code type={'punctuation'} text='{'></com.Code>
                         </HorizontalLayout>
                         </VerticalLayout>

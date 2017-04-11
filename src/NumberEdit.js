@@ -1,6 +1,6 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
-class NumberEdit extends YXReactUIBase{
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
+class NumberEdit extends ReactUIBase{
 	onValueChange(evt){
 		var value = evt.target.value;
 		//TODO: check value is valid number

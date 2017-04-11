@@ -1,5 +1,5 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 var echarts = require('echarts');
 if (typeof window != 'undefined') { //only do this on client render
@@ -11,7 +11,7 @@ if (typeof window != 'undefined') { //only do this on client render
 		}).bind(this));
 	}
 }
-class ECharts extends YXReactUIBase {
+class ECharts extends ReactUIBase {
 	static get propTypes() {
 		return {
 			theme: React.PropTypes.string,

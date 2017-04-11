@@ -1,9 +1,9 @@
-import YXReactUIBase from '../framework/uibase';
-import React from 'react'
+import ReactUIBase from '../framework/uibase';
+import React, { Component } from 'react'
 import HorizontalLayout from './HorizontalLayout'
 import FontIcon from './FontIcon'
 var color = require('../common/color');
-class PageTurning extends YXReactUIBase{	
+class PageTurning extends ReactUIBase{	
 	static get propTypes() {
 		return {
 			page: React.PropTypes.number,

@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react'
 import com from '../../pages/common/common'
 import VerticalLayout from '../../src/VerticalLayout'
 import GoTop from '../../src/GoTop'
-class GoTopInfo extends React.Component{
+class GoTopInfo extends Component {
     static get displayName (){
         return {
             name: '回到顶部',

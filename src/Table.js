@@ -1,10 +1,10 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 import VerticalLayout from './VerticalLayout'
 import HorizontalLayout from './HorizontalLayout'
 import FontIcon from './FontIcon'
 import CheckBox from './CheckBox'
-class Table extends YXReactUIBase{
+class Table extends ReactUIBase{
 	static get propTypes() {
 		return {
 			data: React.PropTypes.object,

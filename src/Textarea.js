@@ -1,7 +1,7 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 var color = require('../common/color');
-class Textarea extends YXReactUIBase{
+class Textarea extends ReactUIBase{
 	static get propTypes() {
 		return {
 			theme: React.PropTypes.string

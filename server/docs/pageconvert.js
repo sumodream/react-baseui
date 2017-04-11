@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 function recursionCall(define,depth,parent){
 	if (typeof define == 'string'){
@@ -22,7 +22,7 @@ module.exports = function(pagedefine,editable){
 		console.log("this should not happen!");
 		return null;
 	}
-	var VerticalLayout = require('yxbaseui').VerticalLayout;
+	var VerticalLayout = require('baseui').VerticalLayout;
 	var children=pagedefine.children.map((c)=>{
 		return recursionCall(c,[0],null);
 	});

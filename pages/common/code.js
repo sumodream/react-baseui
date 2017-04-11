@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 import VerticalLayout from '../../src/VerticalLayout'
 import HorizontalLayout from '../../src/HorizontalLayout'
-class Code extends React.Component {
+class Code extends Component {
     static get defaultProps() {
         return {
         	text:'',

@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { Component } from 'react'
 import VerticalLayout from '../../src/VerticalLayout'
-class Folder extends React.Component{
+class Folder extends Component {
     static get defaultProps() {
         return {
             title: '',

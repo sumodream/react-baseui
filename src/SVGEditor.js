@@ -1,5 +1,5 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 import HorizontalLayout from './HorizontalLayout'
 import VerticalLayout from './VerticalLayout'
 import Button from './Button'
@@ -295,7 +295,7 @@ class Rect extends Shape {
 		)
 	}
 }
-class SVGEditor extends YXReactUIBase {
+class SVGEditor extends ReactUIBase {
 	static get propTypes() {
 		return {
 			editimage: React.PropTypes.string,

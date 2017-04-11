@@ -1,5 +1,5 @@
 {
-  "name": "yxbaseui",
+  "name": "baseui",
   "version": "1.0.0",
   "description": "BaseUI",
   "main": "index.js",
@@ -7,14 +7,14 @@
     "build": "npm run build-cjs && npm run build-uibase && gulp && npm run build-umd &&  npm run build-min",
     "build-cjs": "rimraf base && cross-env BABEL_ENV=cjs babel ./src -d base --ignore '__tests__'",
     "build-uibase": "rimraf framework && cross-env BABEL_ENV=cjs babel ./fwsrc -d framework --ignore '__tests__'",
-    "build-umd": "cross-env BABEL_ENV=cjs NODE_ENV=development webpack index.js dist/yxbaseui.js",
-    "build-min": "cross-env BABEL_ENV=cjs NODE_ENV=production webpack -p index.js dist/yxbaseui.min.js"
+    "build-umd": "cross-env BABEL_ENV=cjs NODE_ENV=development webpack index.js dist/baseui.js",
+    "build-min": "cross-env BABEL_ENV=cjs NODE_ENV=production webpack -p index.js dist/baseui.min.js"
   },
   "repository": {
     "type": "git",
-    "url": "git@code.iyunxiao.com:fe/yxbaseui.git"
+    "url": "https://github.com/sumodream/react-baseui.git"
   },
-  "author": "YunXiao",
+  "author": "Sumo",
   "license": "ISC",
   "dependencies": {
     "draft-js": "0.7.0"

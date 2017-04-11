@@ -1,9 +1,9 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 import HorizontalLayout from './HorizontalLayout'
 import Link from './Link'
 var color = require('../common/color');
-class Tabs extends YXReactUIBase {
+class Tabs extends ReactUIBase {
 	static get propTypes() {
 		return {
 			onSelect: React.PropTypes.func,

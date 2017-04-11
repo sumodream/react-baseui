@@ -1,6 +1,6 @@
 'use strict'
 import ReactDOMServer from 'react-dom/server';
-import React from 'react';
+import React, { Component } from 'react';
 
 var Express = require('express');
 var compression = require('compression');
@@ -76,7 +76,7 @@ app.get("/:comp",function(req,res,next) {
 });
 
 app.get("/",function(req,res,next){
-    var title="BaseUI文档";
+    var title="Sumo | BaseUI";
     let html = "";
 
     var fs = require('fs');

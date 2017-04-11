@@ -1,9 +1,9 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 import VerticalLayout from './VerticalLayout'
 import FontIcon from './FontIcon'
 var color = require('../common/color');
-class CircleChoose extends YXReactUIBase {
+class CircleChoose extends ReactUIBase {
 	static get propTypes() {
 		return {
 			default: React.PropTypes.number,

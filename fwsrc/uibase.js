@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom'
 var color = require('../common/color');
 
-class Dialog extends React.Component{
+class Dialog extends Component {
 	render(){
 		return (
 			<div style={{position:'fixed',left:0,top:0,right:0,bottom:0,alignItems:'center',justifyContent:'center',backgroundColor:'rgba(0,0,0,0.5)',display:'flex',flexDirection:'row'}}>
@@ -27,7 +27,7 @@ class Dialog extends React.Component{
 	}
 }
 
-class YXReactUIBase extends React.Component {
+class ReactUIBase extends Component {
 	
 	constructor(props){
 		super(props);
@@ -346,4 +346,4 @@ class YXReactUIBase extends React.Component {
 	}
 }
 
-module.exports = YXReactUIBase;
+module.exports = ReactUIBase;

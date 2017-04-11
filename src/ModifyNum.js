@@ -1,8 +1,8 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 import HorizontalLayout from './HorizontalLayout'
 var color = require("../common/color");
-class ModifyNum extends YXReactUIBase {
+class ModifyNum extends ReactUIBase {
 	static get propTypes() {
 		return {
             theme: React.PropTypes.string,

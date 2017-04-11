@@ -1,10 +1,10 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 import VerticalLayout from './VerticalLayout'
 import HorizontalLayout from './HorizontalLayout'
 import FontIcon from './FontIcon'
 import Link from './Link'
-class Question extends YXReactUIBase {
+class Question extends ReactUIBase {
    static get propTypes() {
 		return {
 			quesNum: React.PropTypes.number, //题目题号传入

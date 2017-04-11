@@ -1,8 +1,8 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 import VerticalLayout from './VerticalLayout'
 var color = require('../common/color');
-class Folder extends YXReactUIBase{
+class Folder extends ReactUIBase{
 	static get propTypes() {
 		return {
 			title:React.PropTypes.string,

@@ -1,11 +1,11 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 var VerticalLayout=require("src/VerticalLayout");
 var HorizontalLayout=require("src/HorizontalLayout");
 var CircleTabAddon=require("src/CircleTabAddon");
 var Text = require("src/Text");
 
-class Test_CircleTabAddon extends YXReactUIBase{	
+class Test_CircleTabAddon extends ReactUIBase{	
 
     onMouseOver(idx,ref,e){
         return (

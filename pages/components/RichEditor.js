@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 import com from '../../pages/common/common'
 import VerticalLayout from '../../src/VerticalLayout'
 import Link from '../../src/Link'
 import Text from '../../src/Text'
 import RichEditor from '../../src/RichEditor'
 import HorizontalLayout from '../../src/HorizontalLayout'
-class LinkInfo extends React.Component{
+class LinkInfo extends Component {
     static get displayName (){
         return {
             name: '富文本编辑器',

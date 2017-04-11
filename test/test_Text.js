@@ -1,7 +1,7 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 
-class Test_Text extends YXReactUIBase{
+class Test_Text extends ReactUIBase{
     render(){
         var Text=require("src/Text");
         if (!Text) {

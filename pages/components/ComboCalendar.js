@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 import com from '../../pages/common/common'
 import VerticalLayout from '../../src/VerticalLayout'
 import ComboCalendar from '../../src/ComboCalendar'
 import Text from '../../src/Text'
-class ComboCalendarInfo extends React.Component{
+class ComboCalendarInfo extends Component {
     static get displayName (){
         return {
             name: '日期选择框',

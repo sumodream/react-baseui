@@ -1,7 +1,7 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 
-class Test_Toast extends YXReactUIBase{
+class Test_Toast extends ReactUIBase{
 
     testToast(){
         this.toast('一般的Toast');

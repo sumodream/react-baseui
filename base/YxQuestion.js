@@ -26,16 +26,16 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var YxQuestion = function (_YXReactUIBase) {
-    _inherits(YxQuestion, _YXReactUIBase);
+var Questions = function (_YXReactUIBase) {
+    _inherits(Questions, _YXReactUIBase);
 
-    function YxQuestion() {
-        _classCallCheck(this, YxQuestion);
+    function Questions() {
+        _classCallCheck(this, Questions);
 
-        return _possibleConstructorReturn(this, Object.getPrototypeOf(YxQuestion).apply(this, arguments));
+        return _possibleConstructorReturn(this, Object.getPrototypeOf(Questions).apply(this, arguments));
     }
 
-    _createClass(YxQuestion, [{
+    _createClass(Questions, [{
         key: 'createMarkup',
         //是否显示【学生答案】
         value: function createMarkup(value) {
@@ -207,7 +207,7 @@ var YxQuestion = function (_YXReactUIBase) {
         }
     }]);
 
-    return YxQuestion;
+    return Questions;
 }(_uibase2.default);
 
-module.exports = YxQuestion;
+module.exports = Questions;

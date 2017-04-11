@@ -1,7 +1,7 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 
-class Test_Button extends YXReactUIBase{
+class Test_Button extends ReactUIBase{
     render(){
         var Table=require("src/Table");
         var Button=require("src/Button");

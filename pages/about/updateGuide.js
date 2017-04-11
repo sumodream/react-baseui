@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import com from '../../pages/common/common'
 import VerticalLayout from '../../src/VerticalLayout'
 
@@ -9,7 +9,7 @@ var input = `
 
 `;
 
-class YxDesign extends React.Component {
+class UpdateGuide extends Component {
 	static get displayName() {
 		return '升级指南';
 	}
@@ -31,4 +31,4 @@ class YxDesign extends React.Component {
 	}
 }
 
-module.exports = YxDesign;
+module.exports = UpdateGuide;

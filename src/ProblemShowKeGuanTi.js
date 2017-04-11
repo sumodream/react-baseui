@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 import YxECharts from './ECharts'
-import YXReactUIBase from '../framework/uibase'
-class KeGuanTi extends YXReactUIBase{
+import ReactUIBase from '../framework/uibase'
+class KeGuanTi extends ReactUIBase{
 	constructor(props){
 		super(props);
 		this.state={

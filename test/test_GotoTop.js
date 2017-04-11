@@ -1,11 +1,11 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 var VerticalLayout=require("src/VerticalLayout");
 var HorizontalLayout=require("src/HorizontalLayout");
 var GotoTop=require("src/GotoTop");
 var Text = require("src/Text");
 
-class Test_GotoTop extends YXReactUIBase{
+class Test_GotoTop extends ReactUIBase{
 
     render(){
         if ((!HorizontalLayout) || (!GotoTop)){

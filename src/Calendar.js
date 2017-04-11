@@ -1,11 +1,11 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 import moment from 'moment'
 import VerticalLayout from './VerticalLayout'
 import HorizontalLayout from './HorizontalLayout'
 import FontIcon from './FontIcon'
 let color = require('../common/color');
-class Calendar extends YXReactUIBase {
+class Calendar extends ReactUIBase {
 
     static get propTypes() {
         return {
@@ -333,7 +333,7 @@ class Calendar extends YXReactUIBase {
 						<span>{toDay.mmEn}月</span>
 					</span>
                     <span onClick={this.handleNextMonth.bind(this)}>
-					    <FontIcon icon='icon-right-open-3' hoverColor={color.b03} style={style.fontSelected}></FontIcon>
+					    <FontIcon icon='icon-right-open-3' hoverStyle={{color: color.b03}} style={style.fontSelected}></FontIcon>
                     </span>
                 </HorizontalLayout>
 				<HorizontalLayout style={style.week}>

@@ -1,12 +1,12 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 var VerticalLayout=require("src/VerticalLayout");
 var HorizontalLayout=require("src/HorizontalLayout");
 var SVGEditor=require("src/SVGEditor");
 var Image=require("src/Image");
 var Text=require("src/Text");
 var Favicon=require("src/Favicon");
-class Test_SVGEditor extends YXReactUIBase{
+class Test_SVGEditor extends ReactUIBase{
     constructor(props){
         super(props);
         this.state={

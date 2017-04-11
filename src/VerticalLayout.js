@@ -1,5 +1,5 @@
-import React from 'react'
-import YXReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
+import ReactUIBase from '../framework/uibase'
 var style={
 	container:{
 		display:'flex',
@@ -7,7 +7,7 @@ var style={
 		alignItems:'flex-start',
 	},
 }
-class VerticalLayout extends YXReactUIBase{
+class VerticalLayout extends ReactUIBase{
 	render(){
 		var props=Object.assign({},this.props);
 		delete props.style;

@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 import com from '../../pages/common/common'
 import VerticalLayout from '../../src/VerticalLayout'
 import Input from '../../src/Input'
 import FontIcon from '../../src/FontIcon'
 import HorizontalLayout from '../../src/HorizontalLayout'
 import Text from '../../src/Text'
-class InputInfo extends React.Component{
+class InputInfo extends Component {
     static get displayName (){
         return {
             name: '输入框',
@@ -86,7 +86,7 @@ class InputInfo extends React.Component{
                 text: <VerticalLayout>
                         <HorizontalLayout>
                         <com.Code type={'keyword'} text='import' ></com.Code>
-                        <com.Code text='YXReactUIBase'></com.Code>
+                        <com.Code text='ReactUIBase'></com.Code>
                         <com.Code type={'keyword'} text='from'></com.Code>
                         <com.Code type={'string'} text='"../framework/uibase"'></com.Code>
                         </HorizontalLayout>
@@ -100,7 +100,7 @@ class InputInfo extends React.Component{
                         <com.Code type={'function'} text='class' ></com.Code>
                         <com.Code text='Button'></com.Code>
                         <com.Code type={'function'} text='extends'></com.Code>
-                        <com.Code text='YXReactUIBase'></com.Code>
+                        <com.Code text='ReactUIBase'></com.Code>
                         <com.Code type={'punctuation'} text='{'></com.Code>
                         </HorizontalLayout>
                         </VerticalLayout>
@@ -110,7 +110,7 @@ class InputInfo extends React.Component{
                 text: <VerticalLayout>
                         <HorizontalLayout>
                         <com.Code type={'keyword'} text='import' ></com.Code>
-                        <com.Code text='Y45XReactUIBase'></com.Code>
+                        <com.Code text='ReactUIBase'></com.Code>
                         <com.Code type={'keyword'} text='from'></com.Code>
                         <com.Code type={'string'} text='"../framework/uibase"'></com.Code>
                         </HorizontalLayout>
@@ -124,7 +124,7 @@ class InputInfo extends React.Component{
                         <com.Code type={'function'} text='class' ></com.Code>
                         <com.Code text='Button'></com.Code>
                         <com.Code type={'function'} text='extends'></com.Code>
-                        <com.Code text='YXReactUIBase'></com.Code>
+                        <com.Code text='ReactUIBase'></com.Code>
                         <com.Code type={'punctuation'} text='{'></com.Code>
                         </HorizontalLayout>
                         </VerticalLayout>
@@ -137,7 +137,7 @@ class InputInfo extends React.Component{
                     输入框。
                 </com.Title>
                 <com.Folder title={'默认样式'}>
-                    <Input placeholder='让每一个孩子成为最好的自己'></Input>
+                    <Input placeholder='Hello World!'></Input>
                 </com.Folder>
                 <com.Folder title={'API'}>
                     <Text style={{lineHeight: 1.5}}>通过设置 Input 的属性来产生不同的输入框样式。</Text>
@@ -146,12 +146,12 @@ class InputInfo extends React.Component{
                 <com.Folder title={'代码演示'}>
                     <HorizontalLayout style={styles.wrap}>
                         <com.codeView type={codeData.code[0].type} content={codeData.code[0].content} text={codeData.code[0].text}>
-                            <Input placeholder='让每一个孩子成为最好的自己'></Input>
+                            <Input placeholder='Hello World!'></Input>
                         </com.codeView>
                         <com.codeView type={codeData.code[1].type} content={codeData.code[1].content} text={codeData.code[1].text}>
                             <HorizontalLayout>
-                                <Input icon={'icon-admin'} placeholder='让每一个孩子成为最好的自己' ></Input>
-                                <Input search={'icon-search-2'} placeholder='让每一个孩子成为最好的自己'></Input>
+                                <Input icon={'icon-admin'} placeholder='Hello World!' ></Input>
+                                <Input search={'icon-search-2'} placeholder='Hello World!'></Input>
                             </HorizontalLayout>
                         </com.codeView>
                     </HorizontalLayout>

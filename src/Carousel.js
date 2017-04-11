@@ -1,7 +1,7 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-class Carousel extends YXReactUIBase {
+class Carousel extends ReactUIBase {
     static get propTypes() {
         return {
             width: React.PropTypes.number,

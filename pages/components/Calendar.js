@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react'
 import com from '../../pages/common/common'
 import VerticalLayout from '../../src/VerticalLayout'
 import Calendar from '../../src/Calendar'
-class CalendarInfo extends React.Component{
+class CalendarInfo extends Component {
     static get displayName (){
         return {
             name: '日历',

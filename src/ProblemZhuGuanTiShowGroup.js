@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 import YxECharts from './ECharts'
-import YXReactUIBase from '../framework/uibase'
+import ReactUIBase from '../framework/uibase'
 import YXSVG from './SVGEditor'
 
-class DaTiKaWithRemark extends YXReactUIBase{
+class DaTiKaWithRemark extends ReactUIBase{
 	render(){
 		var detail = this.props.data;
 		var remarks = detail.remark? detail.remark:[];
@@ -28,7 +28,7 @@ class DaTiKaWithRemark extends YXReactUIBase{
 	}
 }
 
-class ShowZhuGuanTiAnswer extends YXReactUIBase{
+class ShowZhuGuanTiAnswer extends ReactUIBase{
 	constructor(props){
 		super(props);
 		this.state={selectDetail:null};

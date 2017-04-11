@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 import com from '../../pages/common/common'
 import VerticalLayout from '../../src/VerticalLayout'
 import Text from '../../src/Text'
 import HorizontalLayout from '../../src/HorizontalLayout'
-class TextInfo extends React.Component{
+class TextInfo extends Component {
     static get displayName (){
         return {
             name: '文字',
@@ -43,7 +43,7 @@ class TextInfo extends React.Component{
                 text: <VerticalLayout>
                         <HorizontalLayout>
                         <com.Code type={'keyword'} text='import' ></com.Code>
-                        <com.Code text='YXReactUIBase'></com.Code>
+                        <com.Code text='ReactUIBase'></com.Code>
                         <com.Code type={'keyword'} text='from'></com.Code>
                         <com.Code type={'string'} text='"../framework/uibase"'></com.Code>
                         </HorizontalLayout>
@@ -57,7 +57,7 @@ class TextInfo extends React.Component{
                         <com.Code type={'function'} text='class' ></com.Code>
                         <com.Code text='Button'></com.Code>
                         <com.Code type={'function'} text='extends'></com.Code>
-                        <com.Code text='YXReactUIBase'></com.Code>
+                        <com.Code text='ReactUIBase'></com.Code>
                         <com.Code type={'punctuation'} text='{'></com.Code>
                         </HorizontalLayout>
                         </VerticalLayout>
@@ -67,7 +67,7 @@ class TextInfo extends React.Component{
                 text: <VerticalLayout>
                         <HorizontalLayout>
                         <com.Code type={'keyword'} text='import' ></com.Code>
-                        <com.Code text='Y45XReactUIBase'></com.Code>
+                        <com.Code text='ReactUIBase'></com.Code>
                         <com.Code type={'keyword'} text='from'></com.Code>
                         <com.Code type={'string'} text='"../framework/uibase"'></com.Code>
                         </HorizontalLayout>
@@ -81,7 +81,7 @@ class TextInfo extends React.Component{
                         <com.Code type={'function'} text='class' ></com.Code>
                         <com.Code text='Button'></com.Code>
                         <com.Code type={'function'} text='extends'></com.Code>
-                        <com.Code text='YXReactUIBase'></com.Code>
+                        <com.Code text='ReactUIBase'></com.Code>
                         <com.Code type={'punctuation'} text='{'></com.Code>
                         </HorizontalLayout>
                         </VerticalLayout>
@@ -94,7 +94,7 @@ class TextInfo extends React.Component{
                     文字。
                 </com.Title>
                 <com.Folder title={'默认样式'}>
-                    <Text>让每一个孩子成为最好的自己,Hello everybody!</Text>
+                    <Text>Hello World!</Text>
                 </com.Folder>
                 <com.Folder title={'API'}>
                     <Text style={{lineHeight: 1.5}}>通过设置 Text 的属性来产生不同的文字。</Text>

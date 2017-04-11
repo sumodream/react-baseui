@@ -1,9 +1,9 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 import HorizontalLayout from './HorizontalLayout'
 import VerticalLayout from './VerticalLayout'
 var color = require('../common/color');
-class Collapse extends YXReactUIBase{
+class Collapse extends ReactUIBase{
 	static get propTypes(){
 		return {
 			title: React.PropTypes.string,

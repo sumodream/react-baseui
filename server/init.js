@@ -1,5 +1,5 @@
 window.DevFrame = this;
-import React from 'react'
+import React, { Component } from 'react'
 import color from '../common/color'
 import HorizontalLayout from '../src/HorizontalLayout'
 import VerticalLayout from '../src/VerticalLayout'
@@ -11,7 +11,7 @@ import Link from '../src/Link'
 import FontIcon from '../src/FontIcon'
 import com from '../pages/common/common'
 
-class BaseDevFrame extends React.Component{
+class BaseDevFrame extends Component {
 
     constructor(props) {
         super(props);
@@ -56,7 +56,7 @@ class BaseDevFrame extends React.Component{
                     alignSelf:'stretch'
                 },
                 logo:{
-                    marginRight: 65
+                    marginRight: 120
                 },
                 link:{
                     fontSize: 14,
@@ -80,7 +80,7 @@ class BaseDevFrame extends React.Component{
                 },
                 company:{
                     fontSize: 12,
-                    color: '#ababab'
+                    color: '#666',
                 },
                 text:{
                     margin: '0 5px'
@@ -162,7 +162,7 @@ class BaseDevFrame extends React.Component{
                         ch: obj.ch
                     };
                     compList.push(linkObj);
-                    return (<Link key={idx}style={Object.assign({},styles.link,that.state.comp==linkObj.comp?{borderRight: '2px solid #2db7f5',color:'#2db7f5'}:{})} hoverColor={'#2db7f5'} href={'#about/'+obj.en}>{obj.ch}</Link>);
+                    return (<Link key={idx}style={Object.assign({},styles.link,that.state.comp==linkObj.comp?{borderRight: '2px solid #2db7f5',color:'#2db7f5'}:{})} hoverStyle={{color: '#2db7f5'}} href={'#about/'+obj.en}>{obj.ch}</Link>);
                 });
                 var components = compKeys.map((classify,idx)=>{
                     let classifyComps = classifys[classify].map((comp,idx)=>{
@@ -172,7 +172,7 @@ class BaseDevFrame extends React.Component{
                             ch: comp.ch
                         };
                         compList.push(linkObj);
-                        return (<Link key={idx} style={Object.assign({},styles.linkComp,that.state.comp==linkObj.comp?{borderRight: '2px solid #2db7f5',color:'#2db7f5'}:{})} hoverColor={'#2db7f5'} href={'#components/'+comp.en}>{comp.en}<Text style={{marginLeft: 4,fontSize: 12, opacity:0.6,whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',marginRight:10}}>{comp.ch}</Text></Link>);
+                        return (<Link key={idx} style={Object.assign({},styles.linkComp,that.state.comp==linkObj.comp?{borderRight: '2px solid #2db7f5',color:'#2db7f5'}:{})} hoverStyle={{color: '#2db7f5'}} href={'#components/'+comp.en}>{comp.en}<Text style={{marginLeft: 4,fontSize: 12, opacity:0.6,whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis',marginRight:10}}>{comp.ch}</Text></Link>);
                     });
                     return (
                         <VerticalLayout key={idx} style={{alignSelf:'stretch'}}>
@@ -205,11 +205,13 @@ class BaseDevFrame extends React.Component{
             }
             return (
                 <VerticalLayout style={{backgroundColor:'#ececec',display:'flex',justifyContent:'space-between'}}>
-                    <HorizontalLayout style={{alignItems:'center',backgroundColor:'#fff',justifyContent:'center',height:66,alignSelf: 'stretch',padding:'0 60'}}>
+                    <HorizontalLayout style={{alignItems:'center',backgroundColor:'#fff',justifyContent:'center',height:66,alignSelf: 'stretch',padding:'0 30'}}>
                         <HorizontalLayout style={styles.header}>
                             <Image style={styles.logo} src='/images/logo.png'></Image>
                             <HorizontalLayout style={{flex:'1 0 auto'}}>
-                                
+                              <Link style={styles.link} href={'https://ssumo.github.io/'} hoverStyle={{color: '#59bde5'}}>博客</Link>
+                              <Link style={styles.link} href={'https://github.com/sumodream'} hoverStyle={{color: '#59bde5'}}>GitHub</Link>
+                              <Link style={styles.link} href={'https://github.com/sumodream/react-baseui'} hoverStyle={{color: '#59bde5'}}>源码</Link>
                             </HorizontalLayout>
                         </HorizontalLayout>
                     </HorizontalLayout>
@@ -228,7 +230,7 @@ class BaseDevFrame extends React.Component{
                         </VerticalLayout>
                     </HorizontalLayout>
 
-                    <VerticalLayout style={{height: 86,boxSizing:'border-box',backgroundColor:'#fff',alignSelf: 'stretch',padding:'0 60'}}>
+                    <VerticalLayout style={{height: 76,boxSizing:'border-box',backgroundColor:'#fff',alignSelf: 'stretch',padding:'0 60'}}>
                         <HorizontalLayout style={styles.footer}>
                             <HorizontalLayout style={styles.company}>
                                 <Text style={styles.text}>© 2017 <FontIcon icon="icon-heart" /> Sumo</Text>

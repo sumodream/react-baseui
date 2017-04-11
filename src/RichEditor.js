@@ -1,5 +1,5 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react';
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import {Editor,RichUtils,Modifier,Entity,AtomicBlockUtils, EditorState,CompositeDecorator,convertToRaw,convertFromRaw} from 'draft-js';
 import Button from './Button'
@@ -7,7 +7,7 @@ import Input from './Input'
 import HorizontalLayout from './HorizontalLayout'
 import VerticalLayout from './VerticalLayout'
 
-class StyleButton extends React.Component {
+class StyleButton extends Component {
     constructor() {
         super();
         this.onToggle = (e) => {
@@ -229,7 +229,7 @@ class StyleButton extends React.Component {
     };
 
 
-    class MyEditor extends YXReactUIBase {
+    class MyEditor extends ReactUIBase {
 
         static get defaultProps() {
             return {
@@ -549,7 +549,7 @@ class StyleButton extends React.Component {
         return media;
     };
 
-    class ImageChooser extends React.Component {
+    class ImageChooser extends Component {
         chooseImageFile(evt) {
             var files = evt.target.files;
             if ((files) && (files[0])) {

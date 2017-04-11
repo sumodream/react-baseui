@@ -1,10 +1,10 @@
 window.DevFrame = this;
-import React from 'react'
+import React, { Component } from 'react'
 import HorizontalLayout from '../src/HorizontalLayout'
 import VerticalLayout from '../src/VerticalLayout'
 import Text from '../src/Text'
 
-class BaseDevFrame extends React.Component{
+class BaseDevFrame extends Component {
 
     constructor(props) {
         super(props);

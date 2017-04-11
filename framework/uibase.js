@@ -74,13 +74,13 @@ var Dialog = function (_React$Component) {
 	return Dialog;
 }(_react2.default.Component);
 
-var YXReactUIBase = function (_React$Component2) {
-	_inherits(YXReactUIBase, _React$Component2);
+var ReactUIBase = function (_React$Component2) {
+	_inherits(ReactUIBase, _React$Component2);
 
-	function YXReactUIBase(props) {
-		_classCallCheck(this, YXReactUIBase);
+	function ReactUIBase(props) {
+		_classCallCheck(this, ReactUIBase);
 
-		var _this2 = _possibleConstructorReturn(this, Object.getPrototypeOf(YXReactUIBase).call(this, props));
+		var _this2 = _possibleConstructorReturn(this, Object.getPrototypeOf(ReactUIBase).call(this, props));
 
 		_this2.log = {
 			log: function log() {
@@ -107,7 +107,7 @@ var YXReactUIBase = function (_React$Component2) {
 		return _this2;
 	}
 
-	_createClass(YXReactUIBase, [{
+	_createClass(ReactUIBase, [{
 		key: 'selectkey',
 		value: function selectkey(props) {
 			var selectkey;
@@ -448,7 +448,7 @@ var YXReactUIBase = function (_React$Component2) {
 		}
 	}]);
 
-	return YXReactUIBase;
+	return ReactUIBase;
 }(_react2.default.Component);
 
-module.exports = YXReactUIBase;
+module.exports = ReactUIBase;

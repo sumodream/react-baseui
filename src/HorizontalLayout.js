@@ -1,7 +1,7 @@
-import React from 'react'
-import YXReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
+import ReactUIBase from '../framework/uibase'
 
-class HorizontalLayout extends YXReactUIBase{
+class HorizontalLayout extends ReactUIBase{
 	render(){
 		var style={
 			container:{

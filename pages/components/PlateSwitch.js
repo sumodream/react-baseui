@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react'
 import com from '../../pages/common/common'
 import VerticalLayout from '../../src/VerticalLayout'
 import PlateSwitch from '../../src/PlateSwitch'
 import HorizontalLayout from '../../src/HorizontalLayout'
 import Text from '../../src/Text'
-class PlateSwitchInfo extends React.Component{
+class PlateSwitchInfo extends Component {
     static get displayName (){
         return {
             name: '模块对比',
@@ -65,7 +65,7 @@ class PlateSwitchInfo extends React.Component{
                 text: <VerticalLayout>
                         <HorizontalLayout>
                         <com.Code type={'keyword'} text='import' ></com.Code>
-                        <com.Code text='YXReactUIBase'></com.Code>
+                        <com.Code text='ReactUIBase'></com.Code>
                         <com.Code type={'keyword'} text='from'></com.Code>
                         <com.Code type={'string'} text='"../framework/uibase"'></com.Code>
                         </HorizontalLayout>
@@ -79,7 +79,7 @@ class PlateSwitchInfo extends React.Component{
                         <com.Code type={'function'} text='class' ></com.Code>
                         <com.Code text='Button'></com.Code>
                         <com.Code type={'function'} text='extends'></com.Code>
-                        <com.Code text='YXReactUIBase'></com.Code>
+                        <com.Code text='ReactUIBase'></com.Code>
                         <com.Code type={'punctuation'} text='{'></com.Code>
                         </HorizontalLayout>
                         </VerticalLayout>
@@ -89,7 +89,7 @@ class PlateSwitchInfo extends React.Component{
                 text: <VerticalLayout>
                         <HorizontalLayout>
                         <com.Code type={'keyword'} text='import' ></com.Code>
-                        <com.Code text='Y45XReactUIBase'></com.Code>
+                        <com.Code text='ReactUIBase'></com.Code>
                         <com.Code type={'keyword'} text='from'></com.Code>
                         <com.Code type={'string'} text='"../framework/uibase"'></com.Code>
                         </HorizontalLayout>
@@ -103,7 +103,7 @@ class PlateSwitchInfo extends React.Component{
                         <com.Code type={'function'} text='class' ></com.Code>
                         <com.Code text='Button'></com.Code>
                         <com.Code type={'function'} text='extends'></com.Code>
-                        <com.Code text='YXReactUIBase'></com.Code>
+                        <com.Code text='ReactUIBase'></com.Code>
                         <com.Code type={'punctuation'} text='{'></com.Code>
                         </HorizontalLayout>
                         </VerticalLayout>

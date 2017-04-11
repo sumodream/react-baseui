@@ -1,12 +1,12 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import HorizontalLayout from './HorizontalLayout'
 import VerticalLayout from './VerticalLayout'
 import FontIcon from './FontIcon'
 import Link from './Link'
 
-class DropDown extends YXReactUIBase{
+class DropDown extends ReactUIBase{
 	static get propTypes(){
 		return {
 			theme:React.PropTypes.string,

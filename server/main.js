@@ -1,5 +1,5 @@
 window.DevFrame = this;
-import React from 'react'
+import React, { Component } from 'react'
 import Table from '../src/Table'
 import HorizontalLayout from '../src/HorizontalLayout'
 import VerticalLayout from '../src/VerticalLayout'
@@ -29,7 +29,7 @@ function updateQueryStringParameter(uri, key, value) {
   }
 }
 
-class BaseDevFrame extends React.Component{	
+class BaseDevFrame extends Component {	
 
     changeComp(comp){
         history.replaceState(null, "", updateQueryStringParameter(window.location.href,'comp',comp));
@@ -146,6 +146,7 @@ class BaseDevFrame extends React.Component{
                     <HorizontalLayout style={{alignItems:'center',backgroundColor:'#fff',justifyContent:'center',height:66,alignSelf: 'stretch',padding:'0 60',marginBottom: 30,}}>
                         <HorizontalLayout style={styles.header}>
                             <Image style={styles.logo} src='/images/logo.png'></Image>
+                            <Link style={styles.link} href={'https://ssumo.github.io/'} hoverStyle={{color: '#59bde5'}}>博客</Link>
                         </HorizontalLayout>
                     </HorizontalLayout>
 
@@ -163,9 +164,9 @@ class BaseDevFrame extends React.Component{
                     <VerticalLayout style={{height: 86,boxSizing:'border-box',backgroundColor:'#fff',alignSelf: 'stretch',padding:'0 60'}}>
                         <HorizontalLayout style={styles.footer}>
                             <HorizontalLayout style={styles.plateform}>
-                                <Link style={{marginRight: 16}} theme={'default'} icon={'icon-iconfont-xinlang'} href={'http://weibo.com/haofenshu'} hoverColor={'#59bde5'}>@好分数</Link>
-                                <Link style={{marginRight: 16}} ref='wechartui' theme={'default'} icon={'icon-iconfont-weixin'} hoverColor={'#59bde5'} onMouseOver={this.wechartMouseOver.bind(this)} onMouseOut={this.wechartMouseOut.bind(this)}>haofenshu</Link>
-                                <Link ref='appui' theme={'default'} icon={'icon-grade'} hoverColor={'#59bde5'} onMouseOver={this.appMouseOver.bind(this)} onMouseOut={this.appMouseOut.bind(this)}>扫描二维码下载好分数APP</Link>
+                                <Link style={{marginRight: 16}} theme={'default'} icon={'icon-iconfont-xinlang'} href={'http://weibo.com/haofenshu'} hoverStyle={{color: '#59bde5'}}>@好分数</Link>
+                                <Link style={{marginRight: 16}} ref='wechartui' theme={'default'} icon={'icon-iconfont-weixin'} hoverStyle={{color: '#59bde5'}} onMouseOver={this.wechartMouseOver.bind(this)} onMouseOut={this.wechartMouseOut.bind(this)}>haofenshu</Link>
+                                <Link ref='appui' theme={'default'} icon={'icon-grade'} hoverStyle={{color: '#59bde5'}} onMouseOver={this.appMouseOver.bind(this)} onMouseOut={this.appMouseOut.bind(this)}>扫描二维码下载好分数APP</Link>
                             </HorizontalLayout>
                             <HorizontalLayout style={styles.company}>
                                 <Text style={styles.text}>©2014-2015 北京修齐治平科技有限公司</Text>

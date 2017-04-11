@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 import VerticalLayout from '../../src/VerticalLayout'
 
-class Title extends React.Component {
+class Title extends Component {
     static get defaultProps() {
         return {
             title: '的属性说明如下：'

@@ -1,6 +1,6 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
-class Favicon extends YXReactUIBase{
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
+class Favicon extends ReactUIBase{
 	static get propTypes(){
 		return {
 			src: React.PropTypes.string,

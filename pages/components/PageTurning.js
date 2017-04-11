@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react'
 import com from '../../pages/common/common'
 import VerticalLayout from '../../src/VerticalLayout'
 import PageTurning from '../../src/PageTurning'
 import Text from '../../src/Text'
 import HorizontalLayout from '../../src/HorizontalLayout'
-class PageTurningInfo extends React.Component{
+class PageTurningInfo extends Component {
     static get displayName (){
         return {
             name: '页面分页',
@@ -67,7 +67,7 @@ class PageTurningInfo extends React.Component{
                 text: <VerticalLayout>
                         <HorizontalLayout>
                         <com.Code type={'keyword'} text='import' ></com.Code>
-                        <com.Code text='YXReactUIBase'></com.Code>
+                        <com.Code text='ReactUIBase'></com.Code>
                         <com.Code type={'keyword'} text='from'></com.Code>
                         <com.Code type={'string'} text='"../framework/uibase"'></com.Code>
                         </HorizontalLayout>
@@ -81,7 +81,7 @@ class PageTurningInfo extends React.Component{
                         <com.Code type={'function'} text='class' ></com.Code>
                         <com.Code text='Button'></com.Code>
                         <com.Code type={'function'} text='extends'></com.Code>
-                        <com.Code text='YXReactUIBase'></com.Code>
+                        <com.Code text='ReactUIBase'></com.Code>
                         <com.Code type={'punctuation'} text='{'></com.Code>
                         </HorizontalLayout>
                         </VerticalLayout>
@@ -91,7 +91,7 @@ class PageTurningInfo extends React.Component{
                 text: <VerticalLayout>
                         <HorizontalLayout>
                         <com.Code type={'keyword'} text='import' ></com.Code>
-                        <com.Code text='Y45XReactUIBase'></com.Code>
+                        <com.Code text='ReactUIBase'></com.Code>
                         <com.Code type={'keyword'} text='from'></com.Code>
                         <com.Code type={'string'} text='"../framework/uibase"'></com.Code>
                         </HorizontalLayout>
@@ -105,7 +105,7 @@ class PageTurningInfo extends React.Component{
                         <com.Code type={'function'} text='class' ></com.Code>
                         <com.Code text='Button'></com.Code>
                         <com.Code type={'function'} text='extends'></com.Code>
-                        <com.Code text='YXReactUIBase'></com.Code>
+                        <com.Code text='ReactUIBase'></com.Code>
                         <com.Code type={'punctuation'} text='{'></com.Code>
                         </HorizontalLayout>
                         </VerticalLayout>

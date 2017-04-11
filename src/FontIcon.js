@@ -1,8 +1,8 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 import color from '../common/color'
 
-class FontIcon extends YXReactUIBase{
+class FontIcon extends ReactUIBase{
 	static get propTypes() {
 		return {
 			icon: React.PropTypes.string,

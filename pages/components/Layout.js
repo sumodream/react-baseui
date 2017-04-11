@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react'
 import com from '../../pages/common/common'
 import VerticalLayout from '../../src/VerticalLayout'
 import HorizontalLayout from '../../src/HorizontalLayout'
 import Text from '../../src/Text'
 import Link from '../../src/Link'
-class LayoutInfo extends React.Component{
+class LayoutInfo extends Component {
     static get displayName (){
         return {
             name: '布局',

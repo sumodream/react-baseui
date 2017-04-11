@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react'
 import com from '../../pages/common/common'
 import VerticalLayout from '../../src/VerticalLayout'
 import FontIcon from '../../src/FontIcon'
 import Text from '../../src/Text'
 import Image from '../../src/Image'
-class FontIconInfo extends React.Component{
+class FontIconInfo extends Component {
     static get displayName (){
         return {
             name: '字体图标',

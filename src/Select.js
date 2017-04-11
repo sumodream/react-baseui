@@ -1,9 +1,9 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 import VerticalLayout from './VerticalLayout'
 import ReactDOM from 'react-dom'
 var color = require('../common/color');
-class Select extends YXReactUIBase{
+class Select extends ReactUIBase{
 	static get propTypes() {
 		return {
 			theme: React.PropTypes.oneOf(['primary','danger','success','warning','info','default','infoBlack','infoWhite','infoGray','disabled']),

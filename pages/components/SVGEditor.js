@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 import com from '../../pages/common/common'
 import VerticalLayout from '../../src/VerticalLayout'
 import SVGEditor from '../../src/SVGEditor'
 import Text from '../../src/Text'
-class SVGEditorInfo extends React.Component{
+class SVGEditorInfo extends Component {
     static get displayName (){
         return {
             name: '图片裁切',

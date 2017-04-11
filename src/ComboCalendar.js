@@ -1,11 +1,11 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import Calendar from './Calendar'
 import FontIcon from './FontIcon'
 import moment from 'moment'
 let color = require('../common/color');
-class ComboCalendar extends YXReactUIBase {
+class ComboCalendar extends ReactUIBase {
 
     static get propTypes() {
         return {

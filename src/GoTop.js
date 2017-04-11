@@ -1,10 +1,10 @@
 
-import React from 'react'
-import YXReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
+import ReactUIBase from '../framework/uibase'
 import FontIcon from './FontIcon'
 import VerticalLayout from './VerticalLayout'
 import color from '../common/color'
-class GoTop extends YXReactUIBase {
+class GoTop extends ReactUIBase {
 	constructor(props){
 		super(props);
 		this.state={

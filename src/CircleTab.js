@@ -1,9 +1,9 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 import VerticalLayout from './VerticalLayout';
 import HorizontalLayout from './HorizontalLayout'
 var color = require('../common/color');
-class CircleTab extends YXReactUIBase {
+class CircleTab extends ReactUIBase {
 	static get propTypes() {
 		return {
 			onSelect: React.PropTypes.func,

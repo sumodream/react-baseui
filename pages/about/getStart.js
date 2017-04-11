@@ -1,19 +1,20 @@
-import React from 'react'
+import React, { Component } from 'react'
 import com from '../../pages/common/common'
 import VerticalLayout from '../../src/VerticalLayout'
+import Button from '../../src/Button'
 
 var input = `
 # React使用上手
 
 \`\`\`js
-npm install yxbaseui
-var base = require('yxbaseui');
+npm install baseui
+var base = require('baseui');
 <base.Button />
 \`\`\`
 
 `;
 
-class YxDesign extends React.Component {
+class GetStart extends Component {
 	static get displayName() {
 		return '快速上手';
 	}
@@ -35,4 +36,4 @@ class YxDesign extends React.Component {
 	}
 }
 
-module.exports = YxDesign;
+module.exports = GetStart;

@@ -1,9 +1,9 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 import HorizontalLayout from './HorizontalLayout'
 import Link from './Link'
 var color = require('../common/color');
-class BreadCrumb extends YXReactUIBase {
+class BreadCrumb extends ReactUIBase {
 	static get propTypes() {
 		return {
 			list: React.PropTypes.array,

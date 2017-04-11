@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react'
 import YxECharts from './ECharts'
-import YXReactUIBase from '../framework/uibase'
+import ReactUIBase from '../framework/uibase'
 import ZhuGuanTiAnswer from './ProblemZhuGuanTiShowGroup'
-class ZhuGuanTi extends YXReactUIBase{
+class ZhuGuanTi extends ReactUIBase{
 	constructor(props){
 		super(props);
 		this.state = {

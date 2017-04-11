@@ -1,15 +1,15 @@
-import React from 'react'
+import React, { Component } from 'react'
 import com from '../../pages/common/common'
 import VerticalLayout from '../../src/VerticalLayout'
 
 var input = `
 # 安装
 
-npm install yxbaseui
+npm install baseui
 
 `;
 
-class YxDesign extends React.Component {
+class Install extends Component {
 	static get displayName() {
 		return '安装';
 	}
@@ -31,4 +31,4 @@ class YxDesign extends React.Component {
 	}
 }
 
-module.exports = YxDesign;
+module.exports = Install;

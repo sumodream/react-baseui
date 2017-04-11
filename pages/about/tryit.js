@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 import VerticalLayout from '../../src/VerticalLayout'
 
-class TryItYouself extends React.Component {
+class TryItYouself extends Component {
 	static get displayName() {
 		return 'Try It Yourself';
 	}
@@ -12,9 +12,9 @@ class TryItYouself extends React.Component {
 
 	TIYRender(){
 		var code=`
-			class TestReact extends React.Component{
+			class TestReact extends Component {
 				render(){
-					var base = require('yxbaseui');
+					var base = require('baseui');
 					return (
 						${this.tavalue}
 					)
@@ -36,7 +36,7 @@ class TryItYouself extends React.Component {
 				overflow: 'hidden'
 			}
 		};
-		var base = require('yxbaseui');
+		var base = require('baseui');
 		return (
 			<VerticalLayout style={styles.wrap}>
 				<base.Textarea style={{width:'100%',height:300}} onValueChange={this.updateTaValue.bind(this)}></base.Textarea>

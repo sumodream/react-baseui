@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import ProblemShowKeGuanTi from './ProblemShowKeGuanTi';
 import ProblemShowZhuGuanTi from './ProblemShowZhuGuanTi';
 module.exports =  React.createClass({

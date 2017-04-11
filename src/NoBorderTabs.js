@@ -1,8 +1,8 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 import HorizontalLayout from './HorizontalLayout'
 var color = require('../common/color');
-class NoBorderTabs extends YXReactUIBase {
+class NoBorderTabs extends ReactUIBase {
 	static get propTypes() {
 		return {
 			theme: React.PropTypes.oneOf(['primary','danger','success','warning','info','white','default','warningText']),

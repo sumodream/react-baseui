@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 import com from '../../pages/common/common'
 import VerticalLayout from '../../src/VerticalLayout'
 import ECharts from '../../src/ECharts'
 import Text from '../../src/Text'
-class EChartsInfo extends React.Component {
+class EChartsInfo extends Component {
     static get displayName() {
         return {
             name: '图表',

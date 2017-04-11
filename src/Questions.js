@@ -1,8 +1,8 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 import VerticalLayout from './VerticalLayout'
 import Link from './Link'
-class YxQuestion extends YXReactUIBase {
+class Questions extends ReactUIBase {
    static get propTypes() {
         return {
             data: React.PropTypes.object,
@@ -164,4 +164,4 @@ class YxQuestion extends YXReactUIBase {
         )
     }
 }
-module.exports = YxQuestion;
+module.exports = Questions;

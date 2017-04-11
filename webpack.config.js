@@ -3,7 +3,7 @@ var webpack = require('webpack')
 module.exports = {
 
   output: {
-    library: 'yxbaseui',
+    library: 'baseui',
     libraryTarget: 'umd'
   },
 

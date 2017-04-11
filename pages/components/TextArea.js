@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 import com from '../../pages/common/common'
 import VerticalLayout from '../../src/VerticalLayout'
 import TextArea from '../../src/Textarea'
 import Text from '../../src/Text'
-class TextAreaInfo extends React.Component{
+class TextAreaInfo extends Component {
     static get displayName (){
         return {
             name: '区域框',

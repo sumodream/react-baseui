@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react'
 import com from '../../pages/common/common'
 import VerticalLayout from '../../src/VerticalLayout'
 import DropDown from '../../src/DropDown'
-class DropDownInfo extends React.Component{
+class DropDownInfo extends Component {
     static get displayName (){
         return {
             name: '下拉菜单',

@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import VerticalLayout from '../../src/VerticalLayout'
 
-class MD extends React.Component {
+class MD extends Component {
     static get defaultProps() {
         return {
             src: 'http://design.iyunxiao.com/showmd/?cnt=getstart.md'

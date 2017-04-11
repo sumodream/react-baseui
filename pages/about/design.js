@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import com from '../../pages/common/common'
 import VerticalLayout from '../../src/VerticalLayout'
 
@@ -27,7 +27,7 @@ var input = `
 
 `;
 
-class YxDesign extends React.Component {
+class Design extends Component {
 	static get displayName() {
 		return 'Design of React';
 	}
@@ -49,4 +49,4 @@ class YxDesign extends React.Component {
 	}
 }
 
-module.exports = YxDesign;
+module.exports = Design;

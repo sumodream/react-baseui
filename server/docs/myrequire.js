@@ -28,7 +28,7 @@ function require(param){
     if (param == "redux-thunk") return ReduxThunk;
     if (param == "redux-logger") return reduxLogger;
     if (param == "underscore") return _;
-    if (param == "yxbaseui") return yxbaseui;
+    if (param == "baseui") return baseui;
     if (param == "moment") return moment;
     if (param == "echarts") return echarts;
     if (param == "md5") return md5;

@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 import VerticalLayout from '../../src/VerticalLayout'
 import FontIcon from '../../src/FontIcon'
-class codeView extends React.Component{
+class codeView extends Component {
     static get defaultProps() {
         return {
 			fold: false,

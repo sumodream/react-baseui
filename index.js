@@ -41,8 +41,8 @@ var Tabs = require('./base/Tabs.js');
 var Text = require('./base/Text.js');
 var Textarea = require('./base/Textarea.js');
 var VerticalLayout = require('./base/VerticalLayout.js');
-var YxQuestion = require('./base/YxQuestion.js');
+var Questions = require('./base/Questions.js');
 var uibase = require('./framework/uibase.js');
 var color = require('./common/color.js');
 
-module.exports = {BreadCrumb,Button,Calendar,Carousel,CheckBox,CircleChoose,CircleTab,Collapse,CollapseList,ComboCalendar,DropDown,ECharts,Favicon,Folder,FontIcon,GoTop,HorizontalLayout,Image,Input,Link,LoginForm,ModifyNum,NoBorderTabs,NumberEdit,PageTurning,PlateSwitch,Popover,ProblemShow,ProblemShowKeGuanTi,ProblemShowZhuGuanTi,ProblemZhuGuanTiShowGroup,PushInfo,Question,Radio,RichEditor,SVGEditor,Select,Table,TableTurning,Tabs,Text,Textarea,VerticalLayout,YxQuestion,uibase,color}
+module.exports = {BreadCrumb,Button,Calendar,Carousel,CheckBox,CircleChoose,CircleTab,Collapse,CollapseList,ComboCalendar,DropDown,ECharts,Favicon,Folder,FontIcon,GoTop,HorizontalLayout,Image,Input,Link,LoginForm,ModifyNum,NoBorderTabs,NumberEdit,PageTurning,PlateSwitch,Popover,ProblemShow,ProblemShowKeGuanTi,ProblemShowZhuGuanTi,ProblemZhuGuanTiShowGroup,PushInfo,Question,Radio,RichEditor,SVGEditor,Select,Table,TableTurning,Tabs,Text,Textarea,VerticalLayout,Questions,uibase,color}

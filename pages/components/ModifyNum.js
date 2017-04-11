@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 import com from '../../pages/common/common'
 import VerticalLayout from '../../src/VerticalLayout'
 import ModifyNum from '../../src/ModifyNum'
 import Text from '../../src/Text'
-class ModifyNumInfo extends React.Component{
+class ModifyNumInfo extends Component {
     static get displayName (){
         return {
             name: '数字加减',

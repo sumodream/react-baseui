@@ -1,7 +1,7 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 var color = require('../common/color');
-class Button extends YXReactUIBase{
+class Button extends ReactUIBase{
 	static get propTypes() {
 		return {
 			theme: React.PropTypes.oneOf(['primary','danger','success','warning','info','default','infoBlue','infoBlack','infoWhite','infoGray','disabled','green','lightGreen','warningRev']),

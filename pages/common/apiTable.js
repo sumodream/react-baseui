@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 import VerticalLayout from '../../src/VerticalLayout'
 import Table from '../../src/Table'
-class apiTable extends React.Component{
+class apiTable extends Component {
     static get defaultProps() {
         return {
             title: '',

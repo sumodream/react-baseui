@@ -1,9 +1,9 @@
-import YXReactUIBase from '../framework/uibase'
-import React from 'react'
+import ReactUIBase from '../framework/uibase'
+import React, { Component } from 'react'
 import HorizontalLayout from './HorizontalLayout'
 import FontIcon from './FontIcon'
 var color = require('../common/color');
-class Checkbox extends YXReactUIBase{
+class Checkbox extends ReactUIBase{
 	static get propTypes() {
 		return {
 			theme: React.PropTypes.oneOf(['primary','danger','success','warning','info','default']),
