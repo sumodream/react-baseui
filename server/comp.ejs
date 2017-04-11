@@ -1,0 +1,51 @@
+<!doctype html public="storage">
+<html>
+<head>
+    <meta charset=utf-8/>
+    <title><%= title %></title>
+    <script type="text/javascript"  src="http://cdn.bootcss.com/mathjax/2.6.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntil=configured"></script>
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [["$", "$"]]
+    },
+    "HTML-CSS": {linebreaks: {automatic: true}, matchFontHeight: false},
+    SVG: {linebreaks: {automatic: true}, matchFontHeight: false}
+});
+</script>
+    <script src="/3party/superagent.min.js"></script>
+    <script src="/3party/jquery-1.12.4.min.js"></script>
+    <script src="/react.min.js"></script>
+    <script src="/3party/react-dom.js"></script>
+    <script src="/3party/browser.min.js"></script>
+    <script src="/3party/moment.min.js"></script>
+    <script src="/3party/echarts.min.js"></script>
+    <script src="/3party/md5.min.js"></script>
+    <script src="/3party/underscore-min.js"></script>
+    <script src="/comprequire.js"></script>
+    <style type="text/css">
+        body{
+            padding:0;
+            margin:0;
+            display: flex;
+            flex-direction: column;
+            background-color: #ececec;
+            font-family: Microsoft YaHei,'微软雅黑',Arial,Tahoma,STHeiti,Helvetica,"\5b8b\4f53",sans-serif;
+        }
+    </style>
+
+    <link rel="stylesheet" href="/ello.css">
+</head>
+<body>
+<div id="root" style='display:flex;flex-direction: column;'><%- html %></div>
+
+<script type="text/javascript" charset="utf-8">
+    window.__REDUX_STATE__ = '<%= reduxState %>';
+</script>
+</body>
+</html>
+
+
+
+
+
