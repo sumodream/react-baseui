@@ -2,7 +2,7 @@ import ReactUIBase from '../framework/uibase'
 import React, { Component } from 'react'
 import VerticalLayout from './VerticalLayout'
 import ReactDOM from 'react-dom'
-var color = require('../common/color');
+import color from '../common/color'
 class Select extends ReactUIBase{
 	static get propTypes() {
 		return {

@@ -2,7 +2,7 @@ import ReactUIBase from '../framework/uibase'
 import React, { Component } from 'react'
 import HorizontalLayout from './HorizontalLayout'
 import Link from './Link'
-var color = require('../common/color');
+import color from '../common/color'
 class Tabs extends ReactUIBase {
 	static get propTypes() {
 		return {

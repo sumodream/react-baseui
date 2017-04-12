@@ -20,11 +20,6 @@ var input = `
 * 规范接口
 * 完成文档
 * 提供UI设计和导出工具
-
-## 呼声
-
-需要更多的资源投入呀！！！
-
 `;
 
 class Design extends Component {

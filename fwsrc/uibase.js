@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom'
-var color = require('../common/color');
+import color from '../common/color'
 
 class Dialog extends Component {
 	render(){

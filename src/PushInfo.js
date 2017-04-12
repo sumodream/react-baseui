@@ -1,6 +1,6 @@
 import ReactUIBase from '../framework/uibase'
 import React, { Component } from 'react'
-var color = require('../common/color');
+import color from '../common/color'
 class PushInfo extends ReactUIBase{
     static get propTypes() {
         return {

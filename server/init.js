@@ -16,7 +16,7 @@ class BaseDevFrame extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            comp : 'about/getStart'
+            comp : 'about/design'
         };
     }
     componentDidMount(){

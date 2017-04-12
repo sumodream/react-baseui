@@ -1,7 +1,7 @@
 import ReactUIBase from '../framework/uibase'
 import React, { Component } from 'react'
 import HorizontalLayout from './HorizontalLayout'
-var color = require('../common/color');
+import color from '../common/color'
 class Input extends ReactUIBase{
 	static get propTypes() {
 		return {

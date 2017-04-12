@@ -2,7 +2,7 @@ import ReactUIBase from '../framework/uibase'
 import React, { Component } from 'react'
 import VerticalLayout from './VerticalLayout'
 import FontIcon from './FontIcon'
-var color = require('../common/color');
+import color from '../common/color'
 class CircleChoose extends ReactUIBase {
 	static get propTypes() {
 		return {

@@ -4,7 +4,7 @@ import HorizontalLayout from './HorizontalLayout'
 import VerticalLayout from './VerticalLayout'
 import FontIcon from './FontIcon'
 import Link from './Link'
-var color = require('../common/color');
+import color from '../common/color'
 class CollapseList extends ReactUIBase{
 	static get propTypes(){
 		return {

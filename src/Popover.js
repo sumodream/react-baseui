@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import HorizontalLayout from './HorizontalLayout'
 import VerticalLayout from './VerticalLayout'
 import Text from './Text'
-var color = require('../common/color');
+import color from '../common/color'
 class Popover extends ReactUIBase{
 	static get propTypes() {
 		return {
