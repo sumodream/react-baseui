@@ -9,10 +9,10 @@ class Calendar extends ReactUIBase {
 
     static get propTypes() {
         return {
-			date: React.PropTypes.string,
-			minDate: React.PropTypes.string,
-			maxDate: React.PropTypes.string,
-			chooseDay: React.PropTypes.func
+          date: React.PropTypes.string,
+          minDate: React.PropTypes.string,
+          maxDate: React.PropTypes.string,
+          chooseDay: React.PropTypes.func
 		}
     }
     static get defaultProps() {
@@ -43,7 +43,7 @@ class Calendar extends ReactUIBase {
 		let toDay = this.state.toDay;
 		let year = moment(dateStr).year();
 		let month = moment(dateStr).month();
-        // the day of the month
+    // the day of the month
 		let date = moment(dateStr).date();
 		toDay.yyyy = year;
 		toDay.mm = month;
@@ -65,29 +65,29 @@ class Calendar extends ReactUIBase {
 		_moment.set({
 			'year': _year,
 			'month': _month,
-            'date': 1
+      'date': 1
 		});
 		let dayInfo = {};
-        // 获得月的第一天是一周的第几天
-        let dayOfWeek = _moment.day();
-        for(let d=dayOfWeek-1; d>=0; d--){
-            _moment =_moment.add(-1,'d');
-            dayInfo.yyyy = _moment.year();
-            dayInfo.mm = _moment.month();
-            dayInfo.dd = _moment.date();
-            dayInfo.day = d;
-            dayInfo.ymd = _moment.format('YYYY-MM-DD');
-            dayInfo.mmEn = this.state.monthEn[_moment.month()];
-            weekArray[d] = dayInfo;
-            dayInfo = {}
-        }
+    // 获得月的第一天是一周的第几天
+    let dayOfWeek = _moment.day();
+    for(let d=dayOfWeek-1; d>=0; d--){
+      _moment =_moment.add(-1,'d');
+      dayInfo.yyyy = _moment.year();
+      dayInfo.mm = _moment.month();
+      dayInfo.dd = _moment.date();
+      dayInfo.day = d;
+      dayInfo.ymd = _moment.format('YYYY-MM-DD');
+      dayInfo.mmEn = this.state.monthEn[_moment.month()];
+      weekArray[d] = dayInfo;
+      dayInfo = {}
+    }
 
-        _moment = new moment().set({
-            'year': _year,
-            'month': _month
-        });
-        dayInfo = {};
-        let days = _moment.daysInMonth();
+    _moment = new moment().set({
+      'year': _year,
+      'month': _month
+    });
+    dayInfo = {};
+    let days = _moment.daysInMonth();
 		for (let d = 1; d < days + 1; d++) {
 			_moment.set('date', d);
 			let day = _moment.day();
@@ -106,20 +106,20 @@ class Calendar extends ReactUIBase {
 			}
 			dayInfo = {}
 		}
-        // 向后补充
-        dayOfWeek = _moment.day();
-        for(let d=dayOfWeek+1; d<=6; d++){
-            _moment = _moment.add(1,'d');
-            dayInfo.yyyy = _moment.year();
-            dayInfo.mm = _moment.month();
-            dayInfo.dd = _moment.date();
-            dayInfo.day = d;
-            dayInfo.ymd = _moment.format('YYYY-MM-DD');
-            dayInfo.mmEn = this.state.monthEn[_moment.month()];
-            weekArray[d] = dayInfo;
-            dayInfo = {}
-        }
-        weeksArray.push(weekArray.concat());
+    // 向后补充
+    dayOfWeek = _moment.day();
+    for(let d=dayOfWeek+1; d<=6; d++){
+        _moment = _moment.add(1,'d');
+        dayInfo.yyyy = _moment.year();
+        dayInfo.mm = _moment.month();
+        dayInfo.dd = _moment.date();
+        dayInfo.day = d;
+        dayInfo.ymd = _moment.format('YYYY-MM-DD');
+        dayInfo.mmEn = this.state.monthEn[_moment.month()];
+        weekArray[d] = dayInfo;
+        dayInfo = {}
+    }
+    weeksArray.push(weekArray.concat());
 
 		this.setState({
 			weeksArray: weeksArray
@@ -164,36 +164,35 @@ class Calendar extends ReactUIBase {
 
     chooseDay(day,e){
 		e.preventDefault();
-        e.stopPropagation();
+    e.stopPropagation();
 
+    let minDate = this.props.minDate;
+    let maxDate = this.props.maxDate;
 
-        let minDate = this.props.minDate;
-        let maxDate = this.props.maxDate;
-
-        if(minDate && day.ymd<minDate){
-            return;
-        } else if(maxDate && day.ymd>maxDate){
-            return;
-        }
-
-        let toDay = this.state.toDay;
-        if(toDay.mm!=day.mm){
-            return;
-        }
-
-        if(this.props.chooseDay){
-            this.props.chooseDay(day.ymd);
-        }
-		else{
-			this.setState({
-				toDay: day
-			});
-		}
+    if(minDate && day.ymd<minDate){
+        return;
+    } else if(maxDate && day.ymd>maxDate){
+        return;
     }
 
+    let toDay = this.state.toDay;
+    if(toDay.mm!=day.mm){
+        return;
+    }
+
+    if(this.props.chooseDay){
+        this.props.chooseDay(day.ymd);
+    }
+    else{
+      this.setState({
+        toDay: day
+      });
+    }
+  }
+
     onClick(e){
-        e.preventDefault();
-        e.stopPropagation();
+      e.preventDefault();
+      e.stopPropagation();
     }
 
 	renderDay(day, key) {
@@ -241,21 +240,21 @@ class Calendar extends ReactUIBase {
 			}
 		}
 
-        let divStyle = style.dayDisable;
+    let divStyle = style.dayDisable;
 
-        let minDate = this.props.minDate;
-        let maxDate = this.props.maxDate;
-        if(minDate && day.ymd<minDate){
-            divStyle = style.dayDisable;
-        } else if(maxDate && day.ymd>maxDate){
-            divStyle = style.dayDisable;
-        } else if(toDay.mm!=day.mm){
-            divStyle = style.dayDisable;
-        } else if(isToday()){
-            divStyle = style.daySelected;
-        } else {
-            divStyle = style.dayUnSelected;
-        }
+    let minDate = this.props.minDate;
+    let maxDate = this.props.maxDate;
+    if(minDate && day.ymd<minDate){
+        divStyle = style.dayDisable;
+    } else if(maxDate && day.ymd>maxDate){
+        divStyle = style.dayDisable;
+    } else if(toDay.mm!=day.mm){
+        divStyle = style.dayDisable;
+    } else if(isToday()){
+        divStyle = style.daySelected;
+    } else {
+        divStyle = style.dayUnSelected;
+    }
 
 		return (
 			<span key={key} style={divStyle} onClick={this.chooseDay.bind(this,day)}>
@@ -332,10 +331,10 @@ class Calendar extends ReactUIBase {
 						<span>{toDay.yyyy}年</span>
 						<span>{toDay.mmEn}月</span>
 					</span>
-                    <span onClick={this.handleNextMonth.bind(this)}>
-					    <FontIcon icon='icon-right-open-3' hoverStyle={{color: color.b03}} style={style.fontSelected}></FontIcon>
-                    </span>
-                </HorizontalLayout>
+          <span onClick={this.handleNextMonth.bind(this)}>
+					  <FontIcon icon='icon-right-open-3' hoverStyle={{color: color.b03}} style={style.fontSelected}></FontIcon>
+          </span>
+        </HorizontalLayout>
 				<HorizontalLayout style={style.week}>
 					<span>日</span>
 					<span>一</span>

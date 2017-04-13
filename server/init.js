@@ -56,7 +56,7 @@ class BaseDevFrame extends Component {
                     alignSelf:'stretch'
                 },
                 logo:{
-                    marginRight: 120
+                    marginRight: 105
                 },
                 link:{
                     fontSize: 14,
@@ -205,7 +205,7 @@ class BaseDevFrame extends Component {
             }
             return (
                 <VerticalLayout style={{backgroundColor:'#ececec',display:'flex',justifyContent:'space-between'}}>
-                    <HorizontalLayout style={{alignItems:'center',backgroundColor:'#fff',justifyContent:'center',height:66,alignSelf: 'stretch',padding:'0 30'}}>
+                    <HorizontalLayout style={{alignItems:'center',backgroundColor:'#fff',justifyContent:'center',height:66,alignSelf: 'stretch',padding:'0 45',boxShadow: '0 0 20px rgba(0,0,0,.3)'}}>
                         <HorizontalLayout style={styles.header}>
                             <Image style={styles.logo} src='/images/logo.png'></Image>
                             <HorizontalLayout style={{flex:'1 0 auto'}}>
